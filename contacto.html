@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/mi logo r.png" />
+    <title>ACM Project</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <img class="logo" src="./img/mi logo r.png" alt="" />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="nav collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <div class="enlaces">
+            <a class="nav-item nav-link" href="./home.html">Home</a>
+            <a class="nav-item nav-link" href="./perfil_uno.html">Perfil</a>
+            <a class="nav-item nav-link" href="./contacto.html">Contacto</a>
+          </div>
+          <div class="logos">
+            <a href="https://www.linkedin.com/in/juan-antonio-rosales-perez/"
+              ><img src="./img/link.svg" alt=""
+            /></a>
+            <a href="https://www.behance.net/juanrosper/"
+              ><img src="./img/logotype.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTACTO -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="text-center_titulo">Contacta con nosotros</h2>
+            <h3 class="text-center_subtitulo">
+              Lorem ipsum dolor sit amet consectetur.
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form name="sentMessage" id="contactForm" novalidate="">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Tu nombre"
+                      id="name"
+                      required=""
+                      data-validation-required-message="Pon tu nombre"
+                    />
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Tu Email"
+                      id="email"
+                      required=""
+                      data-validation-required-message="Pon tu email"
+                    />
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="Tu teléfono"
+                      id="phone"
+                      required=""
+                      data-validation-required-message="Pon tu teléfono"
+                    />
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      placeholder="Tu mensaje"
+                      id="message"
+                      required=""
+                      data-validation-required-message="Pon tu mensaje"
+                    ></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <a
+                    type="submit"
+                    class="btn-send"
+                    href="mailto:rosalesjuanantonio@gmail.com"
+                  >
+                    Envíame!
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="./img/mi logo r.png" alt="" />
+          <small class="d-block mb-3 text-muted">&copy; 2012-2020</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Nuestro Trabajo</h5>
+          <ul class="list-unstyled text-small">
+            <li><a href="#">Quiénes Somos?</a></li>
+            <li><a href="#">Ofrecenos proyetos</a></li>
+            <li><a href="#">Trabaja con nosotros</a></li>
+            <li><a href="#">Como funcionamos</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Servicios</h5>
+          <ul class="list-unstyled text-small">
+            <li><a href="#">Diseño Web</a></li>
+            <li><a href="#">Diseño Gráfico</a></li>
+            <li><a href="#">Publicidad</a></li>
+            <li><a href="#">Marketing</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Te ayudamos?</h5>
+          <ul class="list-unstyled text-small">
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Preguntanos</a></li>
+            <li><a href="#">Garantía</a></li>
+            <li><a href="#">Tarifas</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Nosotros</h5>
+          <ul class="list-unstyled text-small">
+            <li><a href="#">Equipo</a></li>
+            <li><a href="#">Localización</a></li>
+            <li><a href="#">Privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

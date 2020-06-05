@@ -1,0 +1,363 @@
+@media (max-width: 1199px) {
+  .perfil {
+    .decoracion {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      &_titulo {
+        @include txt_destacado;
+      }
+      &_separador {
+        border-right: none;
+        border-bottom: 8px solid black;
+      }
+      &_descripcion {
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        margin: 0;
+      }
+    }
+    .selectores {
+      margin-top: 5%;
+      flex-direction: row;
+      &_uno,
+      &_dos,
+      &_tres {
+        width: 10%;
+        border-bottom: 5px solid black;
+        &:hover {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    .logo {
+      width: 10%;
+    }
+    .nav {
+      .navbar-nav {
+        .enlaces {
+          margin-left: 0;
+        }
+        .logos {
+          a {
+            width: 10%;
+          }
+        }
+      }
+    }
+  }
+  .perfil {
+    .decoracion {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      &_titulo {
+        @include txt_destacado;
+      }
+      &_separador {
+        border-right: none;
+        border-bottom: 8px solid black;
+      }
+      &_descripcion {
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        margin: 0;
+      }
+    }
+    .contenido {
+      padding: 5%;
+    }
+
+    .selectores {
+      margin-top: 5%;
+      flex-direction: row;
+      &_uno,
+      &_dos,
+      &_tres {
+        width: 10%;
+        border-bottom: 5px solid black;
+        &:hover {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .navbar {
+    .logo {
+      width: 10%;
+    }
+    .nav {
+      .navbar-nav {
+        .enlaces {
+          margin-left: 0;
+        }
+        .logos {
+          justify-content: flex-start;
+          a {
+            width: 10%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    .logo {
+      width: 20%;
+    }
+    .nav {
+      .navbar-nav {
+        .logos {
+          justify-content: flex-start;
+          a {
+            width: 15%;
+          }
+        }
+      }
+    }
+  }
+  header {
+    .intro {
+      &_cuerpo {
+        font-size: 4rem;
+      }
+    }
+  }
+  .container-fluid {
+    .row {
+      .creacion {
+        &_crea1,
+        &_crea2,
+        &_crea3 {
+          img {
+            width: 20vw;
+          }
+        }
+      }
+    }
+  }
+  .porfolio {
+    &_titulo {
+      margin-top: 5%;
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+    }
+    &_item {
+      a {
+        img {
+          width: 80%;
+        }
+      }
+
+      div {
+        width: 80%;
+      }
+    }
+  }
+  footer {
+    .col-12 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 40%;
+      }
+    }
+  }
+  .perfil {
+    margin-top: 4%;
+    .decoracion {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      &_titulo {
+        @include txt_destacado;
+      }
+      &_separador {
+        border-right: none;
+        border-bottom: 8px solid black;
+      }
+      &_descripcion {
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        margin: 0;
+      }
+    }
+    .contenido {
+      padding: 5%;
+      &_titulo {
+        width: 40%;
+        font-size: 4rem;
+        line-height: 4rem;
+      }
+      &_separador {
+        margin: 2% 0;
+        width: 10%;
+        border-bottom: 4px solid black;
+      }
+      &_descripcion {
+        font-size: 1rem;
+        line-height: 2rem;
+      }
+    }
+    .selectores {
+      margin-top: 5%;
+      flex-direction: row;
+      &_uno,
+      &_dos,
+      &_tres {
+        width: 10%;
+        border-bottom: 5px solid black;
+        &:hover {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 545px) {
+  .perfil {
+    .contenido {
+      &_titulo {
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+      &_descripcion {
+        font-size: 0.8rem;
+        line-height: 1rem;
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  .navbar {
+    .logo {
+      width: 15%;
+    }
+    .nav {
+      .navbar-nav {
+        .logos {
+          justify-content: flex-start;
+          a {
+            width: 14%;
+          }
+        }
+      }
+    }
+  }
+  header {
+    .intro {
+      &_cabecera {
+        font-size: 3rem;
+      }
+      &_cuerpo {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+      }
+      &_pie {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .container-fluid {
+    .row {
+      .info {
+        &_titulo {
+          font-size: 2rem;
+        }
+        &_contenido {
+          text-align: right;
+          font-size: 1rem;
+          line-height: 2rem;
+          margin-top: 4%;
+        }
+        &_btn {
+          width: 50%;
+        }
+      }
+      .creacion {
+        &_titulo {
+          font-size: 2rem;
+        }
+        &_crea1,
+        &_crea2,
+        &_crea3 {
+          img {
+            width: 35vw;
+          }
+        }
+      }
+    }
+  }
+  .perfil {
+    margin-top: 4%;
+    .decoracion {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      &_titulo {
+        font-size: 4rem;
+      }
+      &_separador {
+        border-right: none;
+        border-bottom: 8px solid black;
+      }
+      &_descripcion {
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        margin: 0;
+        font-size: 1rem;
+      }
+    }
+    .contenido {
+      padding: 5%;
+      &_titulo {
+        width: 40%;
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+      &_separador {
+        margin: 2% 0;
+        width: 10%;
+        border-bottom: 4px solid black;
+      }
+      &_descripcion {
+        font-size: 0.75rem;
+        line-height: 1rem;
+      }
+    }
+    .selectores {
+      margin-top: 5%;
+      flex-direction: row;
+      &_uno,
+      &_dos,
+      &_tres {
+        width: 10%;
+        border-bottom: 5px solid black;
+        &:hover {
+          width: 30%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.perfil {
+  margin-top: 4%;
+  .decoracion {
+    width: 100%;
+    &_titulo {
+      @include txt_destacado;
+    }
+    &_separador {
+      width: 22%;
+      margin: 10% 0;
+      height: 15%;
+      border-right: 8px solid black;
+    }
+    &_descripcion {
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      font-size: 1.5rem;
+      line-height: 3rem;
+    }
+  }
+  .contenido {
+    width: 100%;
+    @include fondo;
+    &_titulo {
+      width: 40%;
+      @include txt_destacado;
+    }
+    &_separador {
+      margin: 2% 0;
+      width: 10%;
+      border-bottom: 4px solid black;
+    }
+    &_descripcion {
+      width: 60%;
+      text-align: left;
+      font-size: 1.5rem;
+      line-height: 3rem;
+      margin-top: 4%;
+    }
+  }
+  .uno {
+    background-image: url("./../img/me.png");
+  }
+  .dos {
+    background-image: url("./../img/chica.png");
+  }
+  .tres {
+    background-image: url("./../img/chico.png");
+  }
+  .selectores {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &_uno,
+    &_dos,
+    &_tres {
+      @include boton;
+      &:hover {
+        width: 50%;
+        transition: 0.5s;
+      }
+    }
+  }
+}

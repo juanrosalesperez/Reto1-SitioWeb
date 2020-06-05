@@ -1,0 +1,82 @@
+#contact {
+  background-color: $primary-color;
+  background-image: url("./../img/fondo-contacto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  .text-center {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    &_titulo {
+      margin-bottom: 3%;
+      font-size: 4rem;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      color: $white-color;
+    }
+    &_subtitulo {
+      font-size: 2rem;
+      color: $white-color;
+    }
+  }
+  .form-group {
+    margin-bottom: 25px;
+    input,
+    textarea {
+      padding: 3%;
+    }
+    input.form-control {
+      height: auto;
+      &:focus {
+        border-color: $secondary-color;
+        box-shadow: none;
+      }
+    }
+    textarea.form-control {
+      height: 20vh;
+      &:focus {
+        border-color: $secondary-color;
+        box-shadow: none;
+      }
+    }
+  }
+  .text-danger {
+    color: $secondary-color;
+  }
+  .btn-send {
+    text-align: center;
+    background: $secondary-color;
+    color: $white-color;
+    font-weight: bold;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25rem;
+    border: none;
+    outline: none;
+    &:hover {
+      background: $white-color;
+      color: $secondary-color;
+      outline: none;
+    }
+  }
+
+  &::-webkit-input-placeholder {
+    @include text-form;
+  }
+
+  &:-moz-placeholder {
+    @include text-form;
+  }
+
+  &::-moz-placeholder {
+    @include text-form;
+  }
+
+  &:-ms-input-placeholder {
+    @include text-form;
+  }
+}
